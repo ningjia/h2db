@@ -2,7 +2,6 @@ package com.example.springboot.h2db;
 
 import com.example.springboot.h2db.model.User;
 import com.example.springboot.h2db.repository.UserRepository;
-//import lombok.extern.slf4j.Slf4j;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,6 +1,7 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:h2test; #配置h2数据库的连接地址
+    url: jdbc:h2:mem:h2test; #配置h2数据库的连接地址(内存数据库)
+#    url: jdbc:h2:file:/Users/h2database; #配置h2数据库的连接地址(通过本地磁盘来持久化数据)
     platform: h2 #表明使用的数据库平台是h2
     username: sa #配置数据库用户名
     password: #配置数据库密码

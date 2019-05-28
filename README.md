@@ -5,7 +5,7 @@ h2数据库是常用的开源数据库，与HSQLDB类似，十分适合作为嵌
 
 h2的优势：
 1. h2采用纯java编写，因此不受平台的限制
-2. h2只有一个jar文件，十分适合作为嵌入式数据库使用
+2. h2只有一个jar文件，十分适合作为嵌入式数据库使用，可以同应用程序打包在一起发布
 3. h2提供了一个十分方便的web控制台用于操作和管理数据库内容。
 
 ### 1、添加依赖
@@ -143,6 +143,12 @@ public class UserRepositoryTest {
         log.info(users.get(0).toString());
     }
 }
+```
+
+## H2数据库的持久化
+修改application.yml配置文件中的spring.datasource.url属性，设置为持久化时所对应的本地文件路径。
+```groovy
+url: jdbc:h2:file:/Users/h2database;
 ```
 
 ## 三、Refer
