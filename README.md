@@ -43,7 +43,7 @@ logging:
 - 参见：resources/db/data.sql 及 resources/db/schema.sql 的内容
 
 ### 启动工程，访问 h2 web consloe
-![这里随便写文字](你刚复制的图片路径)
+![这里随便写文字](https://github.com/ningjia/h2db/blob/master/imgs/H2WebConsole01.png)
 1. 输入地址：'http://127.0.0.1:8080/h2-console/'
 2. 'Saved Settings'和'Setting Name'选择：Generic H2 (Server)
 3. JDBC URL填写：jdbc:h2:mem:h2test。(与application配置文件中的'spring.datasource.url'保持一致)
