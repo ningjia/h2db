@@ -150,6 +150,7 @@ public class UserRepositoryTest {
 ```groovy
 url: jdbc:h2:file:/Users/h2database;
 ```
+- 启动后，会自动在/Users目录下，创建'h2database.xx.db'文件。
 
 ## 三、Refer
 [Spring Data JPA(二)：SpringBoot集成H2](https://niocoder.com/2018/03/23/Spring-Data-JPA(二)-SpringBoot集成H2/#applicationyml)
