@@ -1,11 +1,11 @@
 create table if not exists T_USER (
-USE_ID int not null primary key auto_increment,
-USE_NAME varchar(100),
-USE_SEX varchar(1),
-USE_AGE NUMBER(3),
-USE_ID_NO VARCHAR(18),
-USE_PHONE_NUM VARCHAR(11),
-USE_EMAIL VARCHAR(100),
+USER_ID int not null primary key auto_increment,
+USER_NAME varchar(100),
+USER_SEX varchar(1),
+USER_AGE NUMBER(3),
+USER_ID_NO VARCHAR(18),
+USER_PHONE_NUM VARCHAR(11),
+USER_EMAIL VARCHAR(100),
 CREATE_TIME DATE,
 MODIFY_TIME DATE,
-USE_STATE VARCHAR(1));
+USER_STATE VARCHAR(1));

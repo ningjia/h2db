@@ -7,15 +7,15 @@ spring:
     driverClassName: org.h2.Driver #配置JDBC Driver
     schema: classpath:db/schema.sql #进行该配置后，每次启动程序，程序都会运行resources/db/schema.sql文件，对数据库的结构进行操作
     data: classpath:db/data.sql #进行该配置后，每次启动程序，程序都会运行resources/db/data.sql文件，对数据库的数据操作
-#  jpa:
-#    database-platform: org.hibernate.dialect.H2Dialect
-#    hibernate:
-#      ddl-auto: update
-#    properties:
-#      hibernate:
-#        show_sql: true #启用SQL语句的日志记录
-#        use_sql_comments: true
-#        format_sql: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true #启用SQL语句的日志记录
+        USER_sql_comments: true
+        format_sql: true
   h2:
     console:
       enabled: true #进行该配置，程序开启时就会启动h2 web consloe
